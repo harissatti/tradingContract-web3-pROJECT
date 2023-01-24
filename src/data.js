@@ -1,31 +1,7 @@
 
 const tradingContract = { // Trading With Crypto
-    contractAddress: "0x3cD3dF90f3Ddb7BCa72B2bf0467c6a73A2cCE073",
+    contractAddress: "0x50BF525926D6Fc622A472b7b6F25E667807Bb45B",
     ABI:[
-        {
-            "inputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "tradeNumber",
-                    "type": "uint256"
-                }
-            ],
-            "name": "agreeToTrade",
-            "outputs": [],
-            "stateMutability": "nonpayable",
-            "type": "function"
-        },
-        {
-            "inputs": [
-                {
-                    "internalType": "string",
-                    "name": "uri",
-                    "type": "string"
-                }
-            ],
-            "stateMutability": "nonpayable",
-            "type": "constructor"
-        },
         {
             "inputs": [],
             "name": "AllReadyAgreed",
@@ -35,57 +11,6 @@ const tradingContract = { // Trading With Crypto
             "inputs": [],
             "name": "AllreadyAdd",
             "type": "error"
-        },
-        {
-            "inputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "tradeNumber",
-                    "type": "uint256"
-                },
-                {
-                    "internalType": "string",
-                    "name": "assetName",
-                    "type": "string"
-                },
-                {
-                    "internalType": "address",
-                    "name": "walletAddress",
-                    "type": "address"
-                },
-                {
-                    "internalType": "uint256",
-                    "name": "totalAmount",
-                    "type": "uint256"
-                },
-                {
-                    "internalType": "uint256",
-                    "name": "tradeType",
-                    "type": "uint256"
-                }
-            ],
-            "name": "createOrder",
-            "outputs": [],
-            "stateMutability": "nonpayable",
-            "type": "function"
-        },
-        {
-            "inputs": [
-                {
-                    "internalType": "bytes32",
-                    "name": "role",
-                    "type": "bytes32"
-                },
-                {
-                    "internalType": "address",
-                    "name": "account",
-                    "type": "address"
-                }
-            ],
-            "name": "grantRole",
-            "outputs": [],
-            "stateMutability": "nonpayable",
-            "type": "function"
         },
         {
             "inputs": [],
@@ -136,42 +61,6 @@ const tradingContract = { // Trading With Crypto
             "inputs": [],
             "name": "NotBLAddedYet",
             "type": "error"
-        },
-        {
-            "inputs": [
-                {
-                    "internalType": "bytes32",
-                    "name": "role",
-                    "type": "bytes32"
-                },
-                {
-                    "internalType": "address",
-                    "name": "account",
-                    "type": "address"
-                }
-            ],
-            "name": "renounceRole",
-            "outputs": [],
-            "stateMutability": "nonpayable",
-            "type": "function"
-        },
-        {
-            "inputs": [
-                {
-                    "internalType": "bytes32",
-                    "name": "role",
-                    "type": "bytes32"
-                },
-                {
-                    "internalType": "address",
-                    "name": "account",
-                    "type": "address"
-                }
-            ],
-            "name": "revokeRole",
-            "outputs": [],
-            "stateMutability": "nonpayable",
-            "type": "function"
         },
         {
             "anonymous": false,
@@ -247,6 +136,106 @@ const tradingContract = { // Trading With Crypto
             ],
             "name": "RoleRevoked",
             "type": "event"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "tradeNumber",
+                    "type": "uint256"
+                }
+            ],
+            "name": "agreeToTrade",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "tradeNumber",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "string",
+                    "name": "assetName",
+                    "type": "string"
+                },
+                {
+                    "internalType": "address",
+                    "name": "walletAddress",
+                    "type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "totalAmount",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "tradeType",
+                    "type": "uint256"
+                }
+            ],
+            "name": "createOrder",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "role",
+                    "type": "bytes32"
+                },
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                }
+            ],
+            "name": "grantRole",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "role",
+                    "type": "bytes32"
+                },
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                }
+            ],
+            "name": "renounceRole",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "role",
+                    "type": "bytes32"
+                },
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                }
+            ],
+            "name": "revokeRole",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
         },
         {
             "inputs": [
@@ -336,6 +325,17 @@ const tradingContract = { // Trading With Crypto
         {
             "inputs": [
                 {
+                    "internalType": "string",
+                    "name": "uri",
+                    "type": "string"
+                }
+            ],
+            "stateMutability": "nonpayable",
+            "type": "constructor"
+        },
+        {
+            "inputs": [
+                {
                     "internalType": "uint256",
                     "name": "",
                     "type": "uint256"
@@ -410,6 +410,19 @@ const tradingContract = { // Trading With Crypto
                     "internalType": "uint256[]",
                     "name": "",
                     "type": "uint256[]"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "baseUri",
+            "outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string"
                 }
             ],
             "stateMutability": "view",
@@ -525,7 +538,7 @@ const tradingContract = { // Trading With Crypto
                     "type": "uint256"
                 }
             ],
-            "name": "getBlHash",
+            "name": "getAllHash",
             "outputs": [
                 {
                     "internalType": "string",

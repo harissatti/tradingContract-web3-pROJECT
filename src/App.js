@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import Web3 from 'web3';
-import TradeToken from './TradeToken';
 import TradingContract from './TradingContract';
 
 function App() {

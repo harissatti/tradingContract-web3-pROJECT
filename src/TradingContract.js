@@ -219,7 +219,7 @@ const TradingContract = ({ web3Obj, userInfo }) => {
   const onUpdateBaseUri = async (e) => { // ! Set Trade Hash
     e.preventDefault();
     var methods = new web3Obj.eth.Contract(tradingContract.ABI, tradingContract.contractAddress)
-    const result = await methods.methods.updateBaseUri(tradeId).send({
+    const result = await methods.methods.updateBaseUri(uri).send({
       from: userInfo.account,
     });
     console.log(result)
@@ -228,7 +228,7 @@ const TradingContract = ({ web3Obj, userInfo }) => {
   const onGetTradingHash = async (e) => { // ! Get Trade Hash 
     e.preventDefault();
     var methods = new web3Obj.eth.Contract(tradingContract.ABI, tradingContract.contractAddress)
-    const result = await methods.methods.getBlHash(tradeId).call();
+    const result = await methods.methods.getAllHash(tradeId).call();
     
     console.log("LCHash : "+result[0]);
     console.log("verifyLC : "+result[1]);
